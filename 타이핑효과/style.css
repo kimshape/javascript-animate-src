@@ -1,0 +1,27 @@
+.lg-text{
+    font-size: 10rem;
+    margin-left: 25%;
+    margin-top: 11%;
+    font-family: 'Song Myung', serif;
+    font-weight:normal;
+    color:beige;
+   
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+#dynamic::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    background-color: white;
+}
+#dynamic.active::after{
+    display: none;
+}
